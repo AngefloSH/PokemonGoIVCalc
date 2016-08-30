@@ -62,10 +62,15 @@
             this.languageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.englishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.françaisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deutschToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.italianoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.españolToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.teamToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.teamMysticToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.teamValorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.teamIntuitionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -96,8 +101,8 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.lblResults);
             this.splitContainer1.Panel2.Controls.Add(this.dataGridView1);
-            this.splitContainer1.Size = new System.Drawing.Size(734, 414);
-            this.splitContainer1.SplitterDistance = 443;
+            this.splitContainer1.Size = new System.Drawing.Size(826, 414);
+            this.splitContainer1.SplitterDistance = 536;
             this.splitContainer1.TabIndex = 1;
             // 
             // groupBox2
@@ -113,7 +118,7 @@
             this.groupBox2.Controls.Add(this.chkAppraise);
             this.groupBox2.Location = new System.Drawing.Point(3, 164);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(432, 179);
+            this.groupBox2.Size = new System.Drawing.Size(530, 179);
             this.groupBox2.TabIndex = 13;
             this.groupBox2.TabStop = false;
             // 
@@ -121,7 +126,7 @@
             // 
             this.chkBestAtk.AutoSize = true;
             this.chkBestAtk.Enabled = false;
-            this.chkBestAtk.Location = new System.Drawing.Point(156, 94);
+            this.chkBestAtk.Location = new System.Drawing.Point(221, 94);
             this.chkBestAtk.Name = "chkBestAtk";
             this.chkBestAtk.Size = new System.Drawing.Size(57, 17);
             this.chkBestAtk.TabIndex = 7;
@@ -132,7 +137,7 @@
             // 
             this.chkBestDef.AutoSize = true;
             this.chkBestDef.Enabled = false;
-            this.chkBestDef.Location = new System.Drawing.Point(273, 94);
+            this.chkBestDef.Location = new System.Drawing.Point(380, 94);
             this.chkBestDef.Name = "chkBestDef";
             this.chkBestDef.Size = new System.Drawing.Size(66, 17);
             this.chkBestDef.TabIndex = 8;
@@ -157,7 +162,7 @@
             this.cboStatLevel.FormattingEnabled = true;
             this.cboStatLevel.Location = new System.Drawing.Point(35, 130);
             this.cboStatLevel.Name = "cboStatLevel";
-            this.cboStatLevel.Size = new System.Drawing.Size(377, 21);
+            this.cboStatLevel.Size = new System.Drawing.Size(480, 21);
             this.cboStatLevel.TabIndex = 9;
             // 
             // cboOverall
@@ -167,7 +172,7 @@
             this.cboOverall.FormattingEnabled = true;
             this.cboOverall.Location = new System.Drawing.Point(35, 45);
             this.cboOverall.Name = "cboOverall";
-            this.cboOverall.Size = new System.Drawing.Size(377, 21);
+            this.cboOverall.Size = new System.Drawing.Size(480, 21);
             this.cboOverall.TabIndex = 5;
             // 
             // lblStatsLevel
@@ -224,7 +229,7 @@
             this.groupBox1.Controls.Add(this.nudHP);
             this.groupBox1.Location = new System.Drawing.Point(3, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(432, 155);
+            this.groupBox1.Size = new System.Drawing.Size(530, 155);
             this.groupBox1.TabIndex = 12;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Basic information";
@@ -232,12 +237,12 @@
             // chkHatched
             // 
             this.chkHatched.AutoSize = true;
-            this.chkHatched.Location = new System.Drawing.Point(161, 125);
+            this.chkHatched.Location = new System.Drawing.Point(206, 122);
             this.chkHatched.Name = "chkHatched";
             this.chkHatched.Size = new System.Drawing.Size(127, 17);
             this.chkHatched.TabIndex = 6;
             this.chkHatched.Text = "Hatched from an Egg";
-            this.toolTip1.SetToolTip(this.chkHatched, "Every Pokémon hatched from Eggs have all IVs of 10 or above.");
+            this.toolTip1.SetToolTip(this.chkHatched, "Every Pokémon hatched from Eggs have all IVs at 10 or above.");
             this.chkHatched.UseVisualStyleBackColor = true;
             // 
             // label1
@@ -252,7 +257,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(297, 75);
+            this.label4.Location = new System.Drawing.Point(345, 75);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(22, 13);
             this.label4.TabIndex = 5;
@@ -264,7 +269,7 @@
             this.cboPokemon.FormattingEnabled = true;
             this.cboPokemon.Location = new System.Drawing.Point(80, 41);
             this.cboPokemon.Name = "cboPokemon";
-            this.cboPokemon.Size = new System.Drawing.Size(152, 21);
+            this.cboPokemon.Size = new System.Drawing.Size(183, 21);
             this.cboPokemon.TabIndex = 0;
             // 
             // label3
@@ -284,7 +289,7 @@
             0,
             0,
             65536});
-            this.nudLevel.Location = new System.Drawing.Point(312, 42);
+            this.nudLevel.Location = new System.Drawing.Point(360, 42);
             this.nudLevel.Maximum = new decimal(new int[] {
             40,
             0,
@@ -309,7 +314,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(297, 25);
+            this.label2.Location = new System.Drawing.Point(345, 25);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(33, 13);
             this.label2.TabIndex = 4;
@@ -341,7 +346,7 @@
             // 
             // nudHP
             // 
-            this.nudHP.Location = new System.Drawing.Point(312, 91);
+            this.nudHP.Location = new System.Drawing.Point(360, 91);
             this.nudHP.Maximum = new decimal(new int[] {
             999,
             0,
@@ -365,7 +370,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(360, 378);
+            this.button1.Location = new System.Drawing.Point(458, 378);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 11;
@@ -375,7 +380,7 @@
             // 
             // cmdCalculate
             // 
-            this.cmdCalculate.Location = new System.Drawing.Point(360, 349);
+            this.cmdCalculate.Location = new System.Drawing.Point(458, 349);
             this.cmdCalculate.Name = "cmdCalculate";
             this.cmdCalculate.Size = new System.Drawing.Size(75, 23);
             this.cmdCalculate.TabIndex = 10;
@@ -404,7 +409,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(3, 3);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(281, 340);
+            this.dataGridView1.Size = new System.Drawing.Size(280, 340);
             this.dataGridView1.TabIndex = 99;
             // 
             // colAttack
@@ -431,10 +436,11 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.optionsToolStripMenuItem});
+            this.optionsToolStripMenuItem,
+            this.toolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(758, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(850, 24);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -451,24 +457,48 @@
             // 
             this.languageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.englishToolStripMenuItem,
-            this.françaisToolStripMenuItem});
+            this.françaisToolStripMenuItem,
+            this.deutschToolStripMenuItem,
+            this.italianoToolStripMenuItem,
+            this.españolToolStripMenuItem});
             this.languageToolStripMenuItem.Name = "languageToolStripMenuItem";
-            this.languageToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.languageToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.languageToolStripMenuItem.Text = "Language";
             // 
             // englishToolStripMenuItem
             // 
             this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
-            this.englishToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.englishToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.englishToolStripMenuItem.Text = "English";
             this.englishToolStripMenuItem.Click += new System.EventHandler(this.englishToolStripMenuItem_Click);
             // 
             // françaisToolStripMenuItem
             // 
             this.françaisToolStripMenuItem.Name = "françaisToolStripMenuItem";
-            this.françaisToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.françaisToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.françaisToolStripMenuItem.Text = "Français";
             this.françaisToolStripMenuItem.Click += new System.EventHandler(this.françaisToolStripMenuItem_Click);
+            // 
+            // deutschToolStripMenuItem
+            // 
+            this.deutschToolStripMenuItem.Name = "deutschToolStripMenuItem";
+            this.deutschToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.deutschToolStripMenuItem.Text = "Deutsch";
+            this.deutschToolStripMenuItem.Click += new System.EventHandler(this.deutschToolStripMenuItem_Click);
+            // 
+            // italianoToolStripMenuItem
+            // 
+            this.italianoToolStripMenuItem.Name = "italianoToolStripMenuItem";
+            this.italianoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.italianoToolStripMenuItem.Text = "Italiano";
+            this.italianoToolStripMenuItem.Click += new System.EventHandler(this.italianoToolStripMenuItem_Click);
+            // 
+            // españolToolStripMenuItem
+            // 
+            this.españolToolStripMenuItem.Name = "españolToolStripMenuItem";
+            this.españolToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.españolToolStripMenuItem.Text = "Español";
+            this.españolToolStripMenuItem.Click += new System.EventHandler(this.españolToolStripMenuItem_Click);
             // 
             // teamToolStripMenuItem
             // 
@@ -477,7 +507,7 @@
             this.teamValorToolStripMenuItem,
             this.teamIntuitionToolStripMenuItem});
             this.teamToolStripMenuItem.Name = "teamToolStripMenuItem";
-            this.teamToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.teamToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.teamToolStripMenuItem.Text = "Team";
             // 
             // teamMysticToolStripMenuItem
@@ -501,6 +531,21 @@
             this.teamIntuitionToolStripMenuItem.Text = "Team Instinct";
             this.teamIntuitionToolStripMenuItem.Click += new System.EventHandler(this.teamIntuitionToolStripMenuItem_Click);
             // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aboutToolStripMenuItem});
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(24, 20);
+            this.toolStripMenuItem1.Text = "?";
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            // 
             // toolTip1
             // 
             this.toolTip1.AutoPopDelay = 15000;
@@ -511,7 +556,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(758, 457);
+            this.ClientSize = new System.Drawing.Size(850, 460);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -578,6 +623,11 @@
         private System.Windows.Forms.CheckBox chkHatched;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.Label lblResults;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem deutschToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem italianoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem españolToolStripMenuItem;
     }
 }
 

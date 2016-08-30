@@ -61,6 +61,74 @@ namespace PokémonGoManager.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Bisasam
+        ///Bisaknosp
+        ///Bisaflor
+        ///Glumanda
+        ///Glutexo
+        ///Glurak
+        ///Schiggy
+        ///Schillok
+        ///Turtok
+        ///Raupy
+        ///Safcon
+        ///Smettbo
+        ///Hornliu
+        ///Kokuna
+        ///Bibor
+        ///Taubsi
+        ///Tauboga
+        ///Tauboss
+        ///Rattfratz
+        ///Rattikarl
+        ///Habitak
+        ///Ibitak
+        ///Rettan
+        ///Arbok
+        ///Pikachu
+        ///Raichu
+        ///Sandan
+        ///Sandamer
+        ///Nidoran♀
+        ///Nidorina
+        ///Nidoqueen
+        ///Nidoran♂
+        ///Nidorino
+        ///Nidoking
+        ///Piepi
+        ///Pixi
+        ///Vulpix
+        ///Vulnona
+        ///Pummeluff
+        ///Knuddeluff
+        ///Zubat
+        ///Golbat
+        ///Myrapla
+        ///Duflor
+        ///Giflor
+        ///Paras
+        ///Parasek
+        ///Bluzuk
+        ///Omot
+        ///Digda
+        ///Digdri
+        ///Mauzi
+        ///Snobilikat
+        ///Enton
+        ///Entoron
+        ///Menki
+        ///Rasaff
+        ///Fukano
+        ///Arkani
+        /// [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string NamesDE {
+            get {
+                return ResourceManager.GetString("NamesDE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Bulbasaur
         ///Ivysaur
         ///Venusaur
@@ -227,7 +295,16 @@ namespace PokémonGoManager.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Overall, your Pokémon may not be great in battle, but I still like it!
+        ///Overall, your Pokémon is a decent Pokémon.
+        ///Overall, your Pokémon is a strong Pokémon. You should be proud!
+        ///Overall, your Pokémon simply amazes me. It can accomplish anything!
+        ///Its stats don&apos;t point to greatness in battle.
+        ///Its stats indicate that in battle, it&apos;ll get the job done.
+        ///It&apos;s got excellent stats! How exciting!
+        ///I&apos;m blown away by its stats. WOW!
+        ///Dans l&apos;ensemble, ton Pokémon n&apos;est pas un combattant, mais je l&apos;aime bien.
+        ///Dan [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string TextValor {
             get {

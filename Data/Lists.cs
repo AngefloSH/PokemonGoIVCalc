@@ -86,8 +86,10 @@ namespace PokémonGoManager.Data
             int released = Properties.Settings.Default.ReleasedPokemon;
             string[] englishNames = Properties.Resources.NamesEN.Split(new[] { '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries);
             string[] frenchNames = Properties.Resources.NamesFR.Split(new[] { '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries);
+            string[] germanNames = Properties.Resources.NamesDE.Split(new[] { '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries);
             NamesEN = new List<string>();
             NamesFR = new List<string>();
+            NamesDE = new List<string>();
             NamesES = new List<string>();
             NamesIT = new List<string>();
             TextMystic = new List<string>();
@@ -104,6 +106,7 @@ namespace PokémonGoManager.Data
                 NamesES.Add(englishNames[i]);
                 NamesIT.Add(englishNames[i]);
                 NamesFR.Add(frenchNames[i]);
+                NamesDE.Add(germanNames[i]);
                 byte[] data = new byte[8];
                 Array.Copy(Properties.Resources.Pokemon, (i) * 8, data, 0, 8);
                 PokemonList.Add(new Pokemon(natIDs[i], data));

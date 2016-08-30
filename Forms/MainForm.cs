@@ -21,6 +21,21 @@ namespace PokémonGoManager
                     updateComboboxes();
                     françaisToolStripMenuItem.Checked = true;
                     break;
+
+                case 3:
+                    updateComboboxes();
+                    deutschToolStripMenuItem.Checked = true;
+                    break;
+
+                case 4:
+                    updateComboboxes();
+                    italianoToolStripMenuItem.Checked = true;
+                    break;
+
+                case 5:
+                    updateComboboxes();
+                    españolToolStripMenuItem.Checked = true;
+                    break;
                 default:
                     updateComboboxes();
                     englishToolStripMenuItem.Checked = true;
@@ -57,6 +72,9 @@ namespace PokémonGoManager
             {
                 case 2:
                     cboPokemon.Items.AddRange(Data.Lists.NamesFR.ToArray());
+                    break;
+                case 3:
+                    cboPokemon.Items.AddRange(Data.Lists.NamesDE.ToArray());
                     break;
                 default:
                     cboPokemon.Items.AddRange(Data.Lists.NamesEN.ToArray());
@@ -213,6 +231,9 @@ namespace PokémonGoManager
             Properties.Settings.Default.Language = 1;
             englishToolStripMenuItem.Checked = true;
             françaisToolStripMenuItem.Checked = false;
+            deutschToolStripMenuItem.Checked = false;
+            italianoToolStripMenuItem.Checked = false;
+            españolToolStripMenuItem.Checked = false;
             updateComboboxes();
         }
 
@@ -221,6 +242,9 @@ namespace PokémonGoManager
             Properties.Settings.Default.Language = 2;
             englishToolStripMenuItem.Checked = false;
             françaisToolStripMenuItem.Checked = true;
+            deutschToolStripMenuItem.Checked = false;
+            italianoToolStripMenuItem.Checked = false;
+            españolToolStripMenuItem.Checked = false;
             updateComboboxes();
         }
 
@@ -256,6 +280,46 @@ namespace PokémonGoManager
         {
 
             nudHP.Select(0, nudHP.Text.Length);
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Application created by AngefloSH. (ver. 0.1)" + Environment.NewLine + "If you have any suggestions or issues, feel free to open a new issue on the GitHub repository.", "About", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void deutschToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.Language = 3;
+            englishToolStripMenuItem.Checked = false;
+            françaisToolStripMenuItem.Checked = false;
+            deutschToolStripMenuItem.Checked = true;
+            italianoToolStripMenuItem.Checked = false;
+            españolToolStripMenuItem.Checked = false;
+            updateComboboxes();
+        }
+
+        private void italianoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.Language = 4;
+            englishToolStripMenuItem.Checked = false;
+            françaisToolStripMenuItem.Checked = false;
+            deutschToolStripMenuItem.Checked = false;
+            italianoToolStripMenuItem.Checked = true;
+            españolToolStripMenuItem.Checked = false;
+            updateComboboxes();
+
+        }
+
+        private void españolToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.Language = 5;
+            englishToolStripMenuItem.Checked = false;
+            françaisToolStripMenuItem.Checked = false;
+            deutschToolStripMenuItem.Checked = false;
+            italianoToolStripMenuItem.Checked = false;
+            españolToolStripMenuItem.Checked = true;
+            updateComboboxes();
+
         }
     }
 }
