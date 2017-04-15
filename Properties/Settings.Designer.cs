@@ -25,7 +25,7 @@ namespace PokémonGoManager.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("151")]
+        [global::System.Configuration.DefaultSettingValueAttribute("251")]
         public int ReleasedPokemon {
             get {
                 return ((int)(this["ReleasedPokemon"]));

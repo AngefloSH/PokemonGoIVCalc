@@ -199,6 +199,19 @@ namespace PokémonGoManager
             return true;
         }
 
+        private void minMax()
+        {
+            // CP calc
+            lblCPMinMax.Text = "(min: " + Data.Lists.PokemonList[cboPokemon.SelectedIndex].getCP(nudLevel.Value, 0, 0, 0) +
+                                " - max: " + Data.Lists.PokemonList[cboPokemon.SelectedIndex].getCP(nudLevel.Value, 15, 15, 15) + ")";
+
+            // HP calc
+
+            lblHPMinMax.Text = "(min: " + Data.Lists.PokemonList[cboPokemon.SelectedIndex].getHP(nudLevel.Value, 0) +
+                                " - max: " + Data.Lists.PokemonList[cboPokemon.SelectedIndex].getHP(nudLevel.Value, 15) + ")";
+        }
+
+
         private void teamMysticToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Properties.Settings.Default.Team = 1;
@@ -320,6 +333,16 @@ namespace PokémonGoManager
             españolToolStripMenuItem.Checked = true;
             updateComboboxes();
 
+        }
+
+        private void cboPokemon_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            minMax();
+        }
+
+        private void nudLevel_ValueChanged(object sender, EventArgs e)
+        {
+            minMax();
         }
     }
 }

@@ -72,6 +72,8 @@
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.lblCPMinMax = new System.Windows.Forms.Label();
+            this.lblHPMinMax = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -218,6 +220,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.lblHPMinMax);
+            this.groupBox1.Controls.Add(this.lblCPMinMax);
             this.groupBox1.Controls.Add(this.chkHatched);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label4);
@@ -237,7 +241,7 @@
             // chkHatched
             // 
             this.chkHatched.AutoSize = true;
-            this.chkHatched.Location = new System.Drawing.Point(206, 122);
+            this.chkHatched.Location = new System.Drawing.Point(211, 127);
             this.chkHatched.Name = "chkHatched";
             this.chkHatched.Size = new System.Drawing.Size(127, 17);
             this.chkHatched.TabIndex = 6;
@@ -257,7 +261,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(345, 75);
+            this.label4.Location = new System.Drawing.Point(329, 75);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(22, 13);
             this.label4.TabIndex = 5;
@@ -271,6 +275,7 @@
             this.cboPokemon.Name = "cboPokemon";
             this.cboPokemon.Size = new System.Drawing.Size(183, 21);
             this.cboPokemon.TabIndex = 0;
+            this.cboPokemon.SelectedIndexChanged += new System.EventHandler(this.cboPokemon_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -289,7 +294,7 @@
             0,
             0,
             65536});
-            this.nudLevel.Location = new System.Drawing.Point(360, 42);
+            this.nudLevel.Location = new System.Drawing.Point(344, 42);
             this.nudLevel.Maximum = new decimal(new int[] {
             40,
             0,
@@ -309,12 +314,13 @@
             0,
             0,
             0});
+            this.nudLevel.ValueChanged += new System.EventHandler(this.nudLevel_ValueChanged);
             this.nudLevel.Enter += new System.EventHandler(this.nudLevel_Enter);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(345, 25);
+            this.label2.Location = new System.Drawing.Point(329, 25);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(33, 13);
             this.label2.TabIndex = 4;
@@ -346,7 +352,7 @@
             // 
             // nudHP
             // 
-            this.nudHP.Location = new System.Drawing.Point(360, 91);
+            this.nudHP.Location = new System.Drawing.Point(344, 91);
             this.nudHP.Maximum = new decimal(new int[] {
             999,
             0,
@@ -462,41 +468,41 @@
             this.italianoToolStripMenuItem,
             this.españolToolStripMenuItem});
             this.languageToolStripMenuItem.Name = "languageToolStripMenuItem";
-            this.languageToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.languageToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.languageToolStripMenuItem.Text = "Language";
             // 
             // englishToolStripMenuItem
             // 
             this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
-            this.englishToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.englishToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.englishToolStripMenuItem.Text = "English";
             this.englishToolStripMenuItem.Click += new System.EventHandler(this.englishToolStripMenuItem_Click);
             // 
             // françaisToolStripMenuItem
             // 
             this.françaisToolStripMenuItem.Name = "françaisToolStripMenuItem";
-            this.françaisToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.françaisToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.françaisToolStripMenuItem.Text = "Français";
             this.françaisToolStripMenuItem.Click += new System.EventHandler(this.françaisToolStripMenuItem_Click);
             // 
             // deutschToolStripMenuItem
             // 
             this.deutschToolStripMenuItem.Name = "deutschToolStripMenuItem";
-            this.deutschToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.deutschToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.deutschToolStripMenuItem.Text = "Deutsch";
             this.deutschToolStripMenuItem.Click += new System.EventHandler(this.deutschToolStripMenuItem_Click);
             // 
             // italianoToolStripMenuItem
             // 
             this.italianoToolStripMenuItem.Name = "italianoToolStripMenuItem";
-            this.italianoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.italianoToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.italianoToolStripMenuItem.Text = "Italiano";
             this.italianoToolStripMenuItem.Click += new System.EventHandler(this.italianoToolStripMenuItem_Click);
             // 
             // españolToolStripMenuItem
             // 
             this.españolToolStripMenuItem.Name = "españolToolStripMenuItem";
-            this.españolToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.españolToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.españolToolStripMenuItem.Text = "Español";
             this.españolToolStripMenuItem.Click += new System.EventHandler(this.españolToolStripMenuItem_Click);
             // 
@@ -507,7 +513,7 @@
             this.teamValorToolStripMenuItem,
             this.teamIntuitionToolStripMenuItem});
             this.teamToolStripMenuItem.Name = "teamToolStripMenuItem";
-            this.teamToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.teamToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.teamToolStripMenuItem.Text = "Team";
             // 
             // teamMysticToolStripMenuItem
@@ -551,6 +557,24 @@
             this.toolTip1.AutoPopDelay = 15000;
             this.toolTip1.InitialDelay = 500;
             this.toolTip1.ReshowDelay = 100;
+            // 
+            // lblCPMinMax
+            // 
+            this.lblCPMinMax.AutoSize = true;
+            this.lblCPMinMax.Location = new System.Drawing.Point(158, 93);
+            this.lblCPMinMax.Name = "lblCPMinMax";
+            this.lblCPMinMax.Size = new System.Drawing.Size(117, 13);
+            this.lblCPMinMax.TabIndex = 7;
+            this.lblCPMinMax.Text = "(min: 0000 - max: 0000)";
+            // 
+            // lblHPMinMax
+            // 
+            this.lblHPMinMax.AutoSize = true;
+            this.lblHPMinMax.Location = new System.Drawing.Point(420, 93);
+            this.lblHPMinMax.Name = "lblHPMinMax";
+            this.lblHPMinMax.Size = new System.Drawing.Size(105, 13);
+            this.lblHPMinMax.TabIndex = 8;
+            this.lblHPMinMax.Text = "(min: 000 - max: 000)";
             // 
             // frmMain
             // 
@@ -628,6 +652,8 @@
         private System.Windows.Forms.ToolStripMenuItem deutschToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem italianoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem españolToolStripMenuItem;
+        private System.Windows.Forms.Label lblHPMinMax;
+        private System.Windows.Forms.Label lblCPMinMax;
     }
 }
 
